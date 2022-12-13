@@ -40,7 +40,7 @@ body #left #illustration {
 body #right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-start;
   min-height: 100vh;
   max-width: 40%;
@@ -62,6 +62,7 @@ body #right #content {
 body #right #register-button {
   height: 50px;
   width: 180px;
+  margin-bottom: 250px;
   border: none;
   border-radius: 25px;
   color: hsl(257deg, 40%, 49%);
@@ -70,6 +71,28 @@ body #right #register-button {
   font-size: 16px;
   box-shadow: 2px 3px 16px rgba(14, 14, 14, 0.5019607843);
   background: white;
+}
+body #right #social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  width: 100%;
+  padding: 60px;
+}
+body #right #social .soc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 25px;
+  color: white;
+  font-size: 22px;
+  background: none;
 }
 
 @media (max-width: 1000px) {
@@ -81,7 +104,10 @@ body #right #register-button {
     align-items: center;
     min-height: 50vh;
     max-width: 100%;
-    padding: 10px;
+  }
+  body #left #logo {
+    height: 50px;
+    margin-right: 60%;
   }
   body #right {
     justify-content: center;
@@ -96,5 +122,9 @@ body #right #register-button {
   }
   body #right #register-button {
     width: 250px;
+    margin: 10px 0 60px 0;
+  }
+  body #right #social {
+    justify-content: center;
   }
 }/*# sourceMappingURL=style.css.map */

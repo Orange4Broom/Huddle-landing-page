@@ -47,7 +47,7 @@ body
     #right  
         display: flex
         flex-direction: column
-        justify-content: center
+        justify-content: flex-end
         align-items: flex-start
 
         min-height: 100vh
@@ -76,6 +76,8 @@ body
             height: 50px
             width: 180px
 
+            margin-bottom: 250px
+
             border: none
             border-radius: 25px
 
@@ -88,6 +90,35 @@ body
 
             background: white
 
+        #social
+            display: flex
+            flex-direction: row
+            justify-content: flex-end
+            align-items: center
+
+            gap: 10px
+
+            height: 50px
+            width: 100%
+
+            padding: 60px
+
+            .soc
+                display: flex
+                justify-content: center
+                align-items: center
+
+                height: 50px
+                width: 50px
+
+                border: 1px solid white
+                border-radius: 25px
+
+                color: white
+                font-size: 22px
+
+                background: none
+
 @media ( max-width: 1000px )
     body
         flex-direction: column
@@ -99,7 +130,9 @@ body
             min-height: 50vh
             max-width: 100%
 
-            padding: 10px
+            #logo
+                height: 50px
+                margin-right: 60%
 
         #right
             justify-content: center
@@ -116,3 +149,8 @@ body
 
             #register-button
                 width: 250px
+
+                margin: 10px 0 60px 0
+
+            #social
+                justify-content: center
