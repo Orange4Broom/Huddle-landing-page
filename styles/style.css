@@ -1,1 +1,130 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-image: url("/images/bg-desktop.svg");
+  background-size: cover;
+  background-position: center;
+  background-color: hsl(257deg, 40%, 49%);
+}
+body #left {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 100px;
+  min-height: 100vh;
+  max-width: 60%;
+  width: 100%;
+  padding: 60px 10px 60px 60px;
+}
+body #left #logo {
+  height: 60px;
+}
+body #left #illustration {
+  max-width: 85%;
+  width: 100%;
+}
+body #right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  min-height: 100vh;
+  max-width: 40%;
+  width: 100%;
+}
+body #right #right-heaeder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  max-width: 600px;
+  color: white;
+}
+body #right #content {
+  font-weight: 400;
+  font-size: 20px;
+  max-width: 600px;
+  color: white;
+}
+body #right #register-button {
+  height: 50px;
+  width: 180px;
+  margin-bottom: 250px;
+  border: none;
+  border-radius: 25px;
+  color: hsl(257deg, 40%, 49%);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  box-shadow: 2px 3px 16px rgba(14, 14, 14, 0.5019607843);
+  background: white;
+}
+body #right #social {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  width: 100%;
+  padding: 60px;
+}
+body #right #social .soc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 25px;
+  color: white;
+  font-size: 22px;
+  background: none;
+}
+
+@media (max-width: 1000px) {
+  body {
+    flex-direction: column;
+  }
+  body #left {
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 50vh;
+    max-width: 100%;
+  }
+  body #left #logo {
+    height: 50px;
+    margin-right: 60%;
+  }
+  body #right {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 80vh;
+    max-width: 100%;
+    padding: 20px;
+  }
+  body #right #right-heaeder {
+    font-size: 28px;
+  }
+  body #right #register-button {
+    width: 250px;
+    margin: 10px 0 60px 0;
+  }
+  body #right #social {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=style.css.map */
